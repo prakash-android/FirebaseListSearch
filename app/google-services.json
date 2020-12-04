@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "845420333570",
+    "firebase_url": "https://fir-listsearch.firebaseio.com",
+    "project_id": "fir-listsearch",
+    "storage_bucket": "fir-listsearch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845420333570:android:7d8ad3f694db8e8c4f351b",
+        "android_client_info": {
+          "package_name": "com.app.firebaselistsearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845420333570-l318g54gd3knv9ik5ht8pi5us2jrtsjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKKGZ9A9ePAxwwSH8-r-l5aZNvKjYac9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845420333570-l318g54gd3knv9ik5ht8pi5us2jrtsjm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
