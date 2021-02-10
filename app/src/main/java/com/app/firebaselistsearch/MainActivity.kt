@@ -1,35 +1,32 @@
 package com.app.firebaselistsearch
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initUI()
+
+        firestoreBtn.setOnClickListener {
+            var intent = Intent(this, FirestoreActivity::class.java)
+            startActivity(intent)
+        }
+
+        realdbBtn.setOnClickListener {
+            var intent = Intent(this, RealtimeDbActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
-    private fun initUI() {
-        //firestore
-        val db = Firebase.firestore
 
-        //read data
-        db.collection("Users")
-            .get()
-            .addOnSuccessListener { result ->
-                for (document in result) {
-                    Log.e("TAG", "${document.id} => ${document.data}")
-                }
-            }
-            .addOnFailureListener { exception ->
-                Log.e("TAG", "Error getting documents.", exception)
-            }
-    }
 
 
 

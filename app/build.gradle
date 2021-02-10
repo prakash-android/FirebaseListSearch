@@ -17,6 +17,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -41,5 +44,11 @@ dependencies {
     //design support library
     implementation 'com.google.android.material:material:1.2.0-alpha02'
 
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 
 }
