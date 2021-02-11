@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        unsplashBtn.setOnClickListener {
+            var intent = Intent(this, UnsplashActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RealtimeDbActivity"></activity>
+        <activity android:name=".UnsplashActivity"></activity>
+        <activity android:name=".RealtimeDbActivity" />
         <activity android:name=".FirestoreActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
